@@ -1,0 +1,812 @@
+<style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+    * {
+        font-family: "Raleway", sans-serif;
+    }
+
+    .open-reservation-pickup-screen {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    hr {
+        border-top: 1px solid #b0b0b0;
+    }</style
+><!-- ///////////  HEADER  //////////////// -->
+<div class="header">
+    <table
+        border="0"
+        align="center"
+        cellspacing="1"
+        cellpadding="1"
+        style="width: 100%; height: 15%"
+    >
+        <tbody>
+            <tr>
+                <td style="width: 15%; text-align: center">
+                    <img style="width: 150px" src="${brand_logo_url}" />
+                </td>
+                <td style="width: 60%; text-align: center">
+                    <p>
+                        <span style="font-size: 32px"
+                            ><b>Rental Agreement</b></span
+                        >
+                    </p>
+                </td>
+                <td style="width: 15%; text-align: center">
+                    <p>
+                        <span style="font-size: 12px"
+                            >RA#${reservation_id}</span
+                        >
+                    </p>
+                    <span style="text-align: right"
+                        >${open_reservation_pickup_screen}</span
+                    ><br />&nbsp;
+                    <p>${reservation_status}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- ///////////  /HEADER  //////////////// --><!-- ///////////////// Row 1 (Rental + Renter) ////////////////// -->
+<table cellspacing="1" cellpadding="1" style="width: 100%; border: none">
+    <tbody>
+        <tr>
+            <td
+                style="
+                    width: 50%;
+                    text-align: center;
+                    background-color: #f7f7f7;
+                "
+            >
+                <p
+                    style="
+                        font-weight: bold;
+                        width: 100%;
+                        background-color: #dadada;
+                        margin-bottom: 5px;
+                        padding: 6px 0px;
+                    "
+                >
+                    Renter Information
+                </p>
+            </td>
+            <td style="width: 50%; text-align: center">
+                <p
+                    style="
+                        font-weight: bold;
+                        width: 100%;
+                        background-color: #eaeaea;
+                        margin-bottom: 5px;
+                        padding: 6px 0px;
+                    "
+                >
+                    Rental Information
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- -------------------- Renter Information  -------------------- -->
+            <td
+                style="
+                    width: 50%;
+                    text-align: center;
+                    background-color: #f7f7f7;
+                "
+            >
+                <table
+                    cellspacing="1"
+                    cellpadding="1"
+                    style="border-spacing: 0px; width: 100%"
+                >
+                    <tbody>
+                        <tr>
+                            <td style="padding: 5px; width: 50%">
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Renter</strong>: ${first_name}
+                                        ${last_name}<br /><strong>DL#</strong>:
+                                        ${driver_license}<br /><strong
+                                            >Email</strong
+                                        >: ${email}<br /><strong>Address</strong
+                                        >: ${street}, ${city}, ${country}
+                                    </span>
+                                </p>
+                            </td>
+                            <td style="padding: 5px; width: 50%">
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>DOB</strong>: ${birthdate}<br /><strong
+                                            >EXP</strong
+                                        >: ${f256}<br /><strong>Phone</strong>:
+                                        ${phone_number}<br /><strong
+                                            >ZIP Code</strong
+                                        >: ${zip}
+                                    </span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [additional_drivers]
+                <table
+                    cellspacing="1"
+                    cellpadding="1"
+                    style="border-spacing: 0px; width: 100%"
+                >
+                    <tbody>
+                        <tr>
+                            <td style="padding: 5px; width: 50%">
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Additional Driver</strong>:
+                                        ${label}<br /><strong>DL#</strong>:
+                                        ${driver_license}
+                                    </span>
+                                </p>
+                            </td>
+                            <td style="padding: 5px; width: 50%">
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>DOB</strong>: ${birthdate}<br /><strong
+                                            >EXP</strong
+                                        >: ${f256}</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [/additional_drivers]
+            </td>
+            <!-- -------------------- / Renter Information -------------------- --><!-- -------------------- Rental Information -------------------- -->
+            <td style="width: 50%; text-align: center">
+                <table
+                    cellspacing="1"
+                    cellpadding="1"
+                    style="border-spacing: 0px; width: 100%"
+                >
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px; width: 50%">
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Date out</strong>:
+                                        ${pick_up_date}<br /><strong
+                                            >Date due</strong
+                                        >: ${return_date}<br /><strong
+                                            >Pickup Location</strong
+                                        >: ${pick_up_location}<br /><strong
+                                            >Miles Driven</strong
+                                        >: ${distance_driven}
+                                    </span>
+                                </p>
+                            </td>
+                            <td style="padding: 10px; width: 50%">
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Time</strong>:
+                                        ${pick_up_time}<br /><strong
+                                            >Time</strong
+                                        >: ${return_time}<br /><strong
+                                            >Return Location</strong
+                                        >: ${return_location}<br /><strong
+                                            >Miles Allowed</strong
+                                        >: ${distance_allowed}
+                                    </span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <!-- ---------------------------- /Rental Information ------------------------------------ -->
+        </tr>
+    </tbody>
+</table>
+<!-- ///////////////// Row 2 (Vehicle + Payment Block) ////////////////// -->
+<table cellspacing="1" cellpadding="1" style="width: 100%; border: none">
+    <tbody>
+        <tr>
+            <td style="width: 50%; text-align: center">
+                <p
+                    style="
+                        font-weight: bold;
+                        width: 100%;
+                        background-color: #eaeaea;
+                        padding: 6px 0px;
+                    "
+                >
+                    Vehicle Information
+                </p>
+            </td>
+            <td style="width: 50%; background-color: #f7f7f7">
+                <p
+                    style="
+                        font-weight: bold;
+                        width: 100%;
+                        background-color: #dadada;
+                        padding: 6px 0px;
+                        text-align: center; ;
+                    "
+                >
+                    Charge Information
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- -------------------- Vehicle Information  -------------------- -->
+            <td
+                style="
+                    width: 50%;
+                    text-align: center;
+                    vertical-align: top;
+                    position: relative;
+                "
+            >
+                [vehicles]
+                <table
+                    cellspacing="1"
+                    cellpadding="1"
+                    style="
+                        border-spacing: 0px;
+                        width: 100%;
+                        vertical-align: top;
+                    "
+                >
+                    <tbody>
+                        <tr>
+                            <td
+                                style="
+                                    padding: 2.5px;
+                                    width: 50%;
+                                    vertical-align: top;
+                                "
+                            >
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Plate</strong>: ${plate}<br /><strong
+                                            >Brand</strong
+                                        >: ${vehicle_brand_label}<br /><strong
+                                            >Vehicle class</strong
+                                        >: ${vehicle_class}
+                                    </span>
+                                </p>
+                            </td>
+                            <td
+                                style="
+                                    padding: 2.5px;
+                                    width: 50%;
+                                    vertical-align: top;
+                                "
+                            >
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Status</strong>:
+                                        ${reservation_vehicle_status}<br /><strong
+                                            >Model</strong
+                                        >: ${vehicle_model_label}<br /><strong
+                                            >Unit #</strong
+                                        >: ${vehicle_key}
+                                    </span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [/vehicles]
+                <table
+                    cellspacing="1"
+                    cellpadding="1"
+                    style="
+                        border-spacing: 0px;
+                        width: 100%;
+                        vertical-align: top;
+                    "
+                >
+                    <tbody>
+                        <tr>
+                            <td
+                                style="
+                                    padding: 2.5px;
+                                    width: 50%;
+                                    vertical-align: top;
+                                "
+                            >
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Odometer Out</strong>:
+                                        ${odometer_pick_up}<br /><strong
+                                            >Fuel Out</strong
+                                        >: ${fuel_level_pick_up} / 8</span
+                                    >
+                                </p>
+                            </td>
+                            <td
+                                style="
+                                    padding: 2.5px;
+                                    width: 50%;
+                                    vertical-align: top;
+                                "
+                            >
+                                <p>
+                                    <span style="font-size: 12px"
+                                        ><strong>Odometer In</strong>:
+                                        ${odometer_return}<br /><strong
+                                            >Fuel In</strong
+                                        >: ${fuel_level_return} / 8</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img
+                    alt="Vehicle's damage map"
+                    style="
+                        width: 320px;
+                    "
+                    src="${damage_image_link}"
+                />
+            </td>
+            <!-- -------------------- Vehicle Information -------------------- --><!-- -------------------- Charge Information -------------------- -->
+            <td
+                style="
+                    width: 50%;
+                    background-color: #f7f7f7;
+                    vertical-align: top;
+                "
+            >
+                <div style="padding: 8px">
+                    [without_cancellation_fee] [rack_rates_block][with_days]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${total_days}x Days @
+                                        ${base_daily_price}</span
+                                    >
+                                </td>
+                                <td style="width: 50%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${daily_price}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/with_days] [with_weeks]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${total_weeks}x Weeks @
+                                        ${base_weekly_price}</span
+                                    >
+                                </td>
+                                <td style="width: 50%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${weekly_price}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/with_weeks] [/rack_rates_block]
+                    <hr />
+                    [additional_charges_block]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 70%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${additional_charge_label}</span
+                                    >
+                                </td>
+                                <td style="width: 30%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${additional_charge_total_price}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/additional_charges_block]
+                    <hr />
+                    [miscellaneous_block]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 70%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${miscellaneous_label}</span
+                                    >
+                                </td>
+                                <td style="width: 30%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${miscellaneous_price}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/miscellaneous_block]
+                    <hr />
+                    [discounts_block]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${discount_name}</span
+                                    >
+                                </td>
+                                <td style="width: 50%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >(${discount_amount})</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/discounts_block][with_discounts]
+                    <hr />
+                    [/with_discounts]
+                    <table
+                        border="0"
+                        cellspacing="1"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><strong>Total</strong></span
+                                    >
+                                </td>
+                                <td style="text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><strong>${total_price}</strong></span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/without_cancellation_fee] [with_cancellation_fee]
+                    <table
+                        border="0"
+                        cellspacing="1"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><span style="font-size: 12px"
+                                            ><strong>Cancellation Fee</strong>
+                                        </span></span
+                                    >
+                                </td>
+                                <td style="text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><span style="font-size: 12px"
+                                            ><strong
+                                                >${cancellation_fee}</strong
+                                            >
+                                        </span></span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr />
+                    <table
+                        border="0"
+                        cellspacing="1"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><strong>Total</strong></span
+                                    >
+                                </td>
+                                <td style="text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><strong
+                                            >${cancellation_fee}</strong
+                                        ></span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr />
+                    [/with_cancellation_fee] [payments_block]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >Payment: ${payment_type_method}</span
+                                    >
+                                </td>
+                                <td style="width: 50%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${amount}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/payments_block] [refunds_block]
+                    <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="1"
+                        style="width: 100%; font-family: ProximaNovaRegular"
+                    >
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >Refund: ${refund_type_method}</span
+                                    >
+                                </td>
+                                <td style="width: 50%; text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${amount}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    [/refunds_block]
+                    <hr />
+                    <table
+                        cellspacing="1"
+                        cellpadding="1"
+                        style="
+                            width: 100%;
+                            font-size: 12px;
+                            font-family: ProximaNovaRegular;
+                        "
+                    >
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <span
+                                            style="
+                                                font-family: Arial, Helvetica,
+                                                    sans-serif;
+                                            "
+                                            ><strong
+                                                ><i>Amount Outstanding:</i>
+                                            </strong></span
+                                        >
+                                    </p>
+                                </td>
+                                <td style="text-align: right">
+                                    <p>
+                                        <span
+                                            style="
+                                                font-family: Arial, Helvetica,
+                                                    sans-serif;
+                                            "
+                                            ><strong
+                                                >${outstanding_balance}</strong
+                                            ></span
+                                        >
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table
+                        cellspacing="1"
+                        cellpadding="1"
+                        style="
+                            width: 100%;
+                            font-size: 12px;
+                            font-family: ProximaNovaRegular;
+                        "
+                    >
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        ><strong
+                                            >Security Deposit:</strong
+                                        ></span
+                                    >
+                                </td>
+                                <td style="text-align: right">
+                                    <span
+                                        style="
+                                            font-family: Arial, Helvetica,
+                                                sans-serif;
+                                        "
+                                        >${security_deposit_amount}</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+            <!-- -------------------- /Charge Information ---------------------- -->
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><br /><!-- /////////////// TERMS & CONDITIONS /////////////// --></p>
+<p>&nbsp;</p>
+<p
+    style="
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        background-color: #eaeaea;
+        padding: 6px 0px;
+        border-top: 1px solid #dadada;
+    "
+>
+    Terms &amp; Conditions
+</p>
+<table style="width: 100%; text-align: justify">
+    <tbody>
+        <tr>
+            <td style="width: 100%; padding: 4px; vertical-align: top">
+                <p>
+                    <span style="font-size: 12px"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae totam eos enim consequuntur at adipisci perferendis perspiciatis iure sed.</span
+                    >
+                </p>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!------------------------ Signature ---------------------------->
+<p>&nbsp;</p>
+<div style="page-break-inside: avoid">
+    <table style="width: 100%; text-align: center">
+        <tbody>
+            <tr>
+                <td style="width: 50%; padding-bottom: 6px; height: 80px">
+                    <span class="customerSign">${digital_signature}</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%">
+                    <hr style="width: 30%" />
+                    <p><strong>Signature</strong></p>
+                    <p>Signed at ${signed_at}.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>&nbsp;</p>
