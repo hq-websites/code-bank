@@ -1,0 +1,9 @@
+<!-- To be used when a customer request changing the Not Available – Contact Us button on the 2nd step -->
+<script>
+    document
+        .querySelectorAll(".car-rental-step-2-price-column.selectable > div > div > button.car-rental-vehicle-class-contact-us-button")
+        .forEach((node) => {
+            // Place the desired text as the string 2nd parameter on the replace method
+            node.innerText = node.innerText.replace("Not Available – Contact Us", "Contact us to Reserve");
+        });
+</script>

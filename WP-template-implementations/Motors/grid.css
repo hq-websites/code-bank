@@ -1,0 +1,99 @@
+/* Vehicle Grid */
+h2.elementor-heading-title.elementor-size-default {
+    color: white;
+}
+
+.hq-elementor-li {
+    list-style: none !important;
+}
+
+#primary {
+    background-color: #fdfcfd !important;
+}
+.hq-list-rent-button {
+    padding: 10px;
+    background: #f0c540 !important;
+    border-radius: 10px;
+    color: white !important;
+    font-weight: bold !important;
+}
+.vehicle-card {
+    flex-direction: column-reverse !important;
+    background-color: white !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+.hq-list-rent-button:hover {
+    text-decoration: none !important;
+    transition: 0.25s;
+    background: #c5a134 !important;
+}
+
+.hq-vehicle-content-wrapper {
+    order: 1;
+    padding-bottom: 5px;
+}
+
+.vehicle-card > div:nth-child(3) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    width: 100%;
+}
+
+.vehicle-card > div:nth-child(3) > div:nth-child(0) {
+    flex: 1.5;
+}
+
+.vehicle-card .list-feature-listing > li {
+    display: none;
+}
+
+.vehicle-card .list-feature-listing > li:nth-child(-n + 4) {
+    display: list-item;
+}
+
+.hq-list-image-wrapper {
+    height: 48%;
+    display: flex;
+    align-items: center !important;
+    justify-items: center !important;
+    overflow: hidden;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0 !important;
+}
+
+.hq-list-image-wrapper > img {
+    max-height: 250px;
+}
+
+.hq-grid-button-wrapper {
+    flex: 1.5;
+    align-items: flex-start !important;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+
+.hq-grid-button-wrapper-left h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    margin-top: 10px !important;
+}
+
+.vehicle-card .hq-elementor-li .feature-label {
+    margin-left: 0 !important;
+}
+
+.vehicle-card .list-feature-listing .hq-elementor-li .icon-wrapper i {
+    color: #f0c540;
+}
+
+.vehicle-card > div.hq-vehicle-content-wrapper > div > h3:nth-child(2) {
+	font-size: 20px;
+	color: #f0c540;
+}
+
+.vehicle-card > div:nth-child(3) > div:nth-child(1) {
+	flex: 1.75;
+}

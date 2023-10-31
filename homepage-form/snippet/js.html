@@ -1,0 +1,14 @@
+<script>
+    const bookButton = document.querySelector(
+        ".car-rental-public-booking .btn"
+    );
+    bookButton.innerText = "Book now";
+
+    const appForm = document.querySelector(
+        ".car-rental-public-booking .appform"
+    );
+    const appFormTitle = document.createElement("h2");
+    appFormTitle.innerText = "Book your car";
+    appFormTitle.className = "appform-title"
+    appForm.prepend(appFormTitle);
+</script>

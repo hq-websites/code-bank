@@ -1,0 +1,185 @@
+/* Slider */
+
+.hq-wheelsberry-image-wrapper img {
+    height: 420px !important;
+    object-fit: contain !important;
+}
+
+#hq-wheelsberry-slider {
+    background-color: transparent !important;
+}
+
+.cars-slider__title {
+    font-family: DM Sans, sans-serif !important;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: var(--ast-global-color-2);
+}
+
+.cars-slider__item-category {
+    display: block !important;
+    font-family: DM Sans, sans-serif !important;
+    font-size: 43px !important;
+    font-weight: 700 !important;
+    line-height: 1.1em !important;
+    color: var(--ast-global-color-2);
+}
+
+.cars-slider__model {
+    display: none;
+}
+span.cars-slider__item-price.hq-upper-tag {
+    display: none !important;
+}
+span.omcr-price-currency.hq-wheelsberry-weekly-tag {
+    display: none !important;
+}
+
+span.omcr-price-currency.hq-wheelsberry-separator {
+    display: none !important;
+}
+
+.cars-slider__item-description-sep {
+    background-color: #3b71fe !important;
+    height: 6px !important;
+}
+
+.cars-slider__item-reserve-button,
+#reservation-form__submit-button {
+    display: none !important;
+    width: auto;
+    padding: 16px 24px;
+    margin: 0 0 20px !important;
+
+    border-radius: 131px;
+    background-color: #ffffff !important;
+    border: 2px solid #3b71fe !important;
+
+    text-align: center;
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    fill: #999;
+    color: #999 !important;
+}
+
+.cars-slider__item-reserve a span,
+#reservation-form__submit-button,
+.reservation-form__field-inner select:first-child {
+    border-radius: 15px !important;
+}
+
+.cars-slider__item-description {
+    color: #3b71fe !important;
+}
+
+.cars-slider__item-price-value {
+    display: inline-block;
+    width: auto;
+    padding: 16px 24px;
+    margin: 0 0 20px !important;
+
+    border-radius: 20px;
+    background-color: #ffffff !important;
+    border: 2px solid #3b71fe !important;
+
+    text-align: center;
+    font-family: DM Sans, sans-serif !important;
+    font-weight: bold;
+    font-size: 20px !important;
+    line-height: 1em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    fill: #999;
+    color: #999 !important;
+}
+
+.cars-slider__item-options {
+    height: 300px !important;
+    display: flex;
+    align-items: center;
+}
+
+.cars-slider__item-options-inner {
+    padding: 16px 24px;
+    margin: 0 0 20px !important;
+
+    border-radius: 30px;
+    background-color: #ffffff !important;
+    border: 2px solid #3b71fe !important;
+}
+.cars-slider__hq-feature-icon {
+    margin-right: 8px;
+}
+
+.reservation-form,
+.cars-slider:after,
+.cars-slider__item-category,
+.short-des {
+    display: none;
+}
+
+.cars-slider__item-option {
+    padding-left: 0 !important;
+}
+
+.cars-slider__item-option.car-option {
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    fill: #ffffff;
+    color: #999 !important;
+}
+span .br {
+    display: none;
+}
+
+.owl-nav {
+    position: absolute !important;
+    width: 100% !important;
+    height: 60px !important;
+    margin: auto 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .cars-slider__item-options,
+    .cars-slider__item-reserve-mobile {
+        display: none !important;
+    }
+    .cars-slider__item-category {
+        text-align: center !important;
+    }
+    .owl-carousel .owl-dots.disabled,
+    .owl-carousel .owl-nav.disabled {
+        display: none !important;
+    }
+    .hq-places-input-wrapper {
+        margin-right: 0 !important;
+    }
+    #hq-form .hq-places-label-wrapper {
+        text-align: center !important;
+    }
+}
+
+.owl-nav button:before {
+    color: #3b71fe !important;
+}
+
+.cars-slider__subtitle {
+    font-family: DM Sans, sans-serif !important;
+    color: #999 !important;
+}
+
+.cars-slider .cars-slider__title  {
+    font-family: DM Sans, sans-serif !important;
+    color: #3b71fe !important;
+}

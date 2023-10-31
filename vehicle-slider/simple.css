@@ -1,0 +1,176 @@
+#hq-wheelsberry-slider, .header-wrapper, .header, .mobile-menu-container{
+	background-color: white!important;
+}
+
+.reservation-form__time select{
+	padding: 12px !important;
+}
+
+.cars-slider:after  {
+    border-top-color: white!important;
+}
+
+.cars-slider  {
+    color: #7BB126!important;
+}
+
+.om-rental-locations__header::after {
+	border-top-color: #7BB126!important;
+}
+
+.reservation-form.reservation-form-hq, .wpcf7-submit{
+	background-color: #7BB126 !important;
+	
+}
+
+#reservation-form__submit-button, .wpcf7-submit{
+		font-weight: bold;
+}
+
+span.cars-slider__model-inner, i.cars-slider__hq-feature-icon, span.cars-slider__item-option-label
+{
+	color: #7BB126!important;
+}
+
+.reservation-form__submit-button {
+		background-color: #333!important;
+}
+
+i.cars-slider__hq-feature-icon{
+	border-radius: 50px;
+	background-color: white;
+	font-size: 16px;
+	padding: 10px;
+}
+
+
+.cars-slider__item-description-sep,
+.cars-slider__item-reserve-button,input#reservation-form__submit-button:hover, .wpcf7-submit:hover
+{
+	background-color: #7BB126!important;
+    text-decoration: none !important;
+}
+
+.om-back-to-top.active {
+	background-color: #7BB126;
+	color: white;
+}
+
+.om-social-icon{
+	background-color: #7BB126 !important;
+}
+
+.cars-slider__item-reserve-button:hover{
+	background-color: #8bc72c!important;
+}
+
+
+.reservation-form:after{
+	border-top-color: #7BB126!important;
+}
+
+.owl-nav div:before{
+	color: #7BB126;
+	font-size:2rem;
+}
+
+div#hq-carousel {
+    min-height: 525px!important;
+}
+
+.cars-slider__item-category, 
+.hq-wheelsberry-weekly-tag,
+.hq-wheelsberry-separator,
+.hq-upper-tag{ 
+	display: none;
+}
+
+
+.owl-nav div{
+	background-color: white!important;
+	border-radius: 50%!important;
+	padding: 0!important;
+}
+
+
+.om-services__pane, .om-about__pane, .om-rental-locations__header
+{
+	background-color: #7BB126 !important;
+}
+
+.om-testimonials__content, .owl-carousel.vc_om-testimonials:before, .owl-carousel.vc_om-testimonials:after  {
+	color: #7BB126 !important;
+}
+
+.om-about__pane:after {
+	border-left-color: #7BB126 !important
+}
+
+.hq-wheelsberry-daily-tag:before {
+    content: 'from';
+		font-size: 14px;
+}
+
+.page-id-269 h2.cars-slider__title:before {
+    content: 'Vehicle Classes';
+}
+
+.page-id-269 h2.reservation-form__title:before{
+	content: 'BOOK A CAR!'
+}
+
+div.owl-dot.active span, div.owl-dot span {
+	display:none !important;
+}
+
+div.owl-dot.active {
+	background-color: #7BB126 !important;
+}
+
+.hq-wheelsberry-image-wrapper img {
+    height: 420px !important;
+    object-fit: contain !important;
+}
+
+h3.fl-callout-title {
+	font-size: 100%
+}
+
+.reservation-form__subtitle {
+	font-size: 20px
+}
+
+.page-id-1123 .hero {
+	display: none
+}
+.hq-wheelsberry-image-wrapper img {
+    height: 275px !important;
+    object-fit: contain !important;
+}
+.cars-slider__item-price-value {
+	font-size: 22px !important
+}
+
+@media only screen and (max-width: 767px){
+.cars-slider__item-option-label {
+    display: block !important;
+	text-wrap: pretty
+}
+	.cars-slider__item-option {
+		padding-left: 0 !important
+	}
+	.cars-slider__item-option {
+		display: grid !important;
+		justify-content: center;
+		text-align: center;
+		font-size: 14px !important;
+		line-height: 18px !important
+	}
+}
+.short-des {
+    display: none;
+}
+
+#hq-wheelsberry-slider div#hq-carousel {
+    min-height: unset !important;
+}

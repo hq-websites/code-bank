@@ -1,0 +1,80 @@
+/* HQ FORM */
+
+.hq-places-vertical-form-wrapper * {
+    font-family: Poppins, sans-serif !important;
+}
+
+.hq-places-vertical-form-wrapper {
+    background-color: white !important;
+    box-shadow: none !important;
+    padding: 15px 25px !important;
+}
+
+#pick-up-location-custom,
+#return-location-custom {
+    width: 100%;
+}
+
+.hq-select-icon-wrapper-vertical {
+    color: #999 !important;
+}
+
+.fas.fa-map-marked-alt {
+    visibility: hidden;
+}
+
+.hq-places-vertical-form-wrapper select,
+#return-location-custom,
+#pick-up-location-custom {
+    border-radius: 4px !important;
+    color: #999 !important;
+    width: 100%;
+    font-size: 16px !important;
+}
+
+#hq-times-pick-up-date,
+#hq-times-return-date {
+    margin-bottom: 0 !important;
+    border-radius: 4px !important;
+}
+
+button.hq-submit-button {
+    margin-top: 16px;
+    border: 1px solid transparent !important;
+    background-color: #005e99 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    height: 50px;
+}
+
+button.hq-submit-button:hover {
+    background-color: #014b78 !important;
+}
+
+.hq-places-vertical-button-wrapper {
+    margin-top: 8px !important;
+}
+
+.hq-places-label,
+.hq-smart-label {
+    color: grey !important;
+    padding: 0 0 4px 2px;
+    font-size: 16px !important;
+}
+label.hq-smart-label {
+    margin-left: 0;
+}
+select#hq-pick-up-location,
+select#hq-return-location,
+#return-location-custom,
+#pick-up-location-custom {
+    height: 50px;
+}
+
+.hq-select-icon-wrapper-vertical {
+    display: none;
+}
+
+/* HQ FORM */

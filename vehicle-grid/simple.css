@@ -1,0 +1,103 @@
+/* Vehicle Grid */
+#hq-smart-vehicle-grid {
+    font-family: 'Nasalization Rg', sans-serif !important;
+}
+.hq-elementor-title {
+    display: none !important;
+ }
+.hq-elementor-li {
+    list-style: none !important;
+}
+
+#primary {
+    background-color: #fdfcfd !important;
+}
+.hq-list-rent-button {
+    padding: 10px !important;
+    background: #e43a18 !important;
+    border-radius: 10px !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.vehicle-card {
+    background-color: white !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.hq-list-rent-button:hover {
+    text-decoration: none !important;
+    transition: 0.25s;
+    background: #c43215 !important;
+}
+
+.hq-list-label-wrapper-inner h3 {
+    color: #333333 !important;
+		font-size: 16px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .vehicle-card {
+        width: 100%;
+    }
+    #hq-smart-vehicle-grid-row {
+        display: flex;
+        flex-direction: column;
+    }
+    #hq-smart-vehicle-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        column-gap: 10px;
+        row-gap: 30px;
+    }
+}
+
+.hq-vehicle-content-wrapper {
+    padding-bottom: 5px;
+}
+
+.hq-elementor-li .feature-label {
+    margin-left: 0 !important;
+		font-size: 14px !important
+}
+
+.hq-elementor-li .icon-wrapper i {
+    color: #e43a18 !important;
+}
+
+.hq-list-image-wrapper {
+    width: 100%;
+    height: initial;
+    display: flex;
+    align-items: center !important;
+    justify-items: center !important;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hq-list-image-wrapper > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hq-grid-button-wrapper-left h3 {
+    color: #333333 !important;
+}
+
+
+.vehicle-card > div:nth-child(3) {
+    margin-top: 0;
+		display: flex;
+    flex-direction: column;
+	flex: 1
+}
+
+.hq-grid-button-wrapper {
+	margin-top: auto
+}
+
+.hq-elementor-li {
+    margin: 0px 0px 0px 25px !important;
+}
+
+/* vehicle grid end */

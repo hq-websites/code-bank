@@ -1,0 +1,42 @@
+/* HQ Styles */
+#hq-form-wrapper {
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+    font-family: Montserrat, sans-serif !important;
+}
+/* labels */
+.hq-places-label {
+    color: #174538 !important;
+}
+
+/* Inputs */
+#hq-place-form-desktop select, #hq-place-form-desktop input, #hq-times-pick-up-date, #hq-times-return-date {
+	padding-left: 10px;
+}
+
+.hq-places-date-time-wrapper, .hq-places-times-input-wrapper {
+    width: 100%!important;
+ }
+
+/* icons */
+.hq-select-icon-wrapper {
+    display: none !important;
+}
+
+/* submit button */
+.hq-places-input-wrapper.hq-button-wrapper {
+    padding-top: 10px;
+}
+.hq-places-submit-button {
+    background-color: #174538 !important;
+    border: 1px solid white;
+    font-weight: bold !important;
+	font-family: Montserrat, sans-serif !important;
+    padding-bottom: 13px !important;
+	padding-top: 13px !important;
+}
+
+.hq-places-submit-button:hover,
+.hq-places-submit-button:active,
+.hq-places-submit-button:focus {
+    background-color: #0e2720 !important;
+}

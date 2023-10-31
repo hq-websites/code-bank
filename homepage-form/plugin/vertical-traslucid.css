@@ -1,0 +1,100 @@
+/* HQ FORM */
+
+.hq-places-vertical-form-wrapper * {
+    font-family: DM Sans, sans-serif !important;
+}
+
+#hq-place-form-desktop select,
+#hq-place-form-desktop input,
+.hq-places-vertical-form-wrapper select,
+#return-location-custom,
+#pick-up-location-custom,
+#hq-times-pick-up-date,
+#hq-times-return-date {
+    color: white !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid white;
+}
+
+#return-location-custom::placeholder,
+#pick-up-location-custom::placeholder {
+    color: white !important;
+}
+
+.hq-places-vertical-form-wrapper {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    box-shadow: none !important;
+    padding: 15px !important;
+}
+
+#pick-up-location-custom,
+#return-location-custom {
+    width: 100%;
+}
+
+.hq-select-icon-wrapper-vertical {
+    color: white !important;
+}
+
+.fas.fa-map-marked-alt {
+    visibility: hidden;
+}
+
+.hq-places-vertical-form-wrapper select,
+#return-location-custom,
+#pick-up-location-custom {
+    border-radius: 4px !important;
+    color: white !important;
+    width: 100%;
+    font-size: 16px !important;
+    border-bottom: 1px solid white;
+}
+
+.hq-places-vertical-form-wrapper select option {
+    color: black !important;
+}
+
+#hq-times-pick-up-date,
+#hq-times-return-date {
+    margin-bottom: 0 !important;
+    border-radius: 4px !important;
+}
+
+button.hq-submit-button {
+    margin-top: 16px;
+    border: 1px solid transparent !important;
+    background-color: #3b71fe !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    height: 50px;
+}
+
+button.hq-submit-button:hover {
+    background-color: #0141e9 !important;
+}
+
+.hq-places-vertical-button-wrapper {
+    margin-top: 8px !important;
+}
+
+.hq-places-label,
+.hq-smart-label {
+    color: #ffffff !important;
+    padding: 0 0 4px 2px;
+    font-size: 16px !important;
+}
+
+select#hq-pick-up-location,
+select#hq-return-location,
+#return-location-custom,
+#pick-up-location-custom {
+    height: 50px;
+}
+
+.hq-select-icon-wrapper-vertical {
+    display: none;
+}
+
+/* HQ FORM */
